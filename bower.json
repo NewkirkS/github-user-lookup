@@ -1,9 +1,9 @@
 {
-  "name": "ping-pong",
-  "description": "Ping-Pong Calculator",
+  "name": "Git Checkout",
+  "description": "Username search using Github api",
   "main": "index.js",
   "license": "ISC",
-  "homepage": "https://github.com/NewkirkS/ping-pong-calculator",
+  "homepage": "",
   "ignore": [
     "**/.*",
     "node_modules",

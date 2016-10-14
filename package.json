@@ -1,7 +1,7 @@
 {
-  "name": "ping-pong",
+  "name": "Git Checkout",
   "version": "1.0.0",
-  "description": "Ping-Pong Calculator",
+  "description": "Username search using github api",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
