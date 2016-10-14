@@ -2,5 +2,16 @@ $primary-color : #000000;
 $secondary-color : #111111;
 
 .repo-details {
+  margin-top: 50px;
   display: none;
+  border: 2px solid $primary-color;
+}
+
+.results-div {
+  margin-top: 50px;
+  span {
+    cursor:pointer;
+    color:blue;
+    text-decoration:underline;
+  }
 }

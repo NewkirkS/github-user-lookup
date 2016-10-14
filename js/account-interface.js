@@ -3,10 +3,13 @@ var Account = require("./../js/account.js").accountModule;
 var displayResults = function(repos) {
   repos.forEach(function(repo){
     $('#results').append("<li><span class='repo-li'>" + repo.name + "</span></li>");
-    $("repo-li").last().click(function(){
-      $("repo-details").show();
-      $("repo-details h2").text(repo.name);
-      $
+    $(".repo-li").last().click(function(){
+      $(".repo-details").show();
+      $(".repo-details h2").text(repo.name);
+      $("#link").html("Link: <a href=" + repo.url + ">");
+      $("#issues").text("Open Issues: " + repo.open_issues);
+      $("#watchers").text("Watchers: " + repo.watchers);
+      $("#last-update").text("Last Updated: " + repo.updated_at);
     });
   });
 };
