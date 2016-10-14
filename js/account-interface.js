@@ -3,6 +3,11 @@ var Account = require("./../js/account.js").accountModule;
 var displayResults = function(repos) {
   repos.forEach(function(repo){
     $('#results').append("<li><span class='repo-li'>" + repo.name + "</span></li>");
+    $("repo-li").last().click(function(){
+      $("repo-details").show();
+      $("repo-details h2").text(repo.name);
+      $
+    });
   });
 };
 
