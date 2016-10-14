@@ -8,7 +8,7 @@ $(document).ready(function() {
     $("#u-name").val("");
     var newAccount = new Account(username);
     console.log(newAccount.username);
-    newAccount.getRepos();
+    newAccount.getRepos(newAccount.username);
   });
 
 });
