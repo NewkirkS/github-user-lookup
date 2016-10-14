@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="build/css/vendor.css">
     <link rel="stylesheet" href="build/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <title>Git Checkout</title>
@@ -16,6 +17,7 @@
 
       <div class="row">
         <div class="col-md-6" id="form-div">
+          <img src="img/search.png" alt="search" />
           <form id="account-form">
             <div class="form-group">
               <label for="u-name">Username</label>
@@ -25,14 +27,16 @@
           </form>
         </div>
         <div class="col-md-6" id="intro-div">
+          <img src="img/github.png" alt="octocat" />
           <p>
-            Search for a valid Github username and get a list of their public repos!
+            Search for a valid Github username and get a list of their public repos along with information like the number of watchers and open issues, the last time it was updated and a link to the repo.
           </p>
         </div>
       </div>
 
       <div class="row">
         <div class="results-div col-md-6">
+          <h2 id="name"></h2>
           <ul id="results">
           </ul>
         </div>
@@ -45,7 +49,7 @@
           <li id="watchers"></li>
           <li id="last-update"></li>
           </ul>
-          
+
         </div>
       </div>
 

@@ -21,6 +21,7 @@ $(document).ready(function() {
     $("#results").empty();
     var username = $("#u-name").val();
     $("#u-name").val("");
+    $("#name").text(username);
     var newAccount = new Account(username);
     newAccount.getRepos(newAccount.username, displayResults);
   });
