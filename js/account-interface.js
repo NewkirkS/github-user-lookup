@@ -10,6 +10,7 @@ $(document).ready(function() {
 
   $('#account-form').submit(function(event) {
     event.preventDefault();
+    $("#results").empty();
     var username = $("#u-name").val();
     $("#u-name").val("");
     var newAccount = new Account(username);
