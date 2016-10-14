@@ -1,5 +1,11 @@
 var Account = require("./../js/account.js").accountModule;
 
+var displayResults = function(repos) {
+  repos.forEach(function(repo){
+    $('#results').append("<li>" + repo.name + "test</li>");
+  });
+};
+
 $(document).ready(function() {
 
   $('#account-form').submit(function(event) {
@@ -7,8 +13,7 @@ $(document).ready(function() {
     var username = $("#u-name").val();
     $("#u-name").val("");
     var newAccount = new Account(username);
-    console.log(newAccount.username);
-    newAccount.getRepos(newAccount.username);
+    newAccount.getRepos(newAccount.username, displayResults);
   });
 
 });

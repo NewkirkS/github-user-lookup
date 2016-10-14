@@ -4,9 +4,11 @@ function Account(username) {
   this.username = username.toString();
 }
 
-Account.prototype.getRepos = function(username){
-  $.get('https://api.github.com/users/' + username + '?access_token=' + apiKey).then(function(response){
-    console.log(response);
+Account.prototype.getRepos = function(username, displayFunction){
+  $.get('https://api.github.com/users/' + username + '/repos?access_token=' + apiKey).then(function(response){
+
+    displayFunction(response);
+
   }).fail(function(error){
     console.log(error.responseJSON.message);
   });
