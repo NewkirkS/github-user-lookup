@@ -6,7 +6,7 @@ var displayResults = function(repos) {
     $(".repo-li").last().click(function(){
       $(".repo-details").show();
       $(".repo-details h2").text(repo.name);
-      $("#link").html("Link: <a href=" + repo.url + ">");
+      $("#link").text("Link: "+ repo.url);
       $("#issues").text("Open Issues: " + repo.open_issues);
       $("#watchers").text("Watchers: " + repo.watchers);
       $("#last-update").text("Last Updated: " + repo.updated_at);
