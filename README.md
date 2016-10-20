@@ -18,7 +18,7 @@ _Independent project for week 1 of JavaScript. Uses the Github API to search for
 
 _After cloning, run the following commands in the terminal to install packages:_
 
-`npm install -1`
+`npm install`
 
 `bower install`
 
