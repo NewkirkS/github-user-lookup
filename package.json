@@ -1,5 +1,5 @@
 {
-  "name": "Git Checkout",
+  "name": "git-checkout",
   "version": "1.0.0",
   "description": "Username search using github api",
   "main": "index.js",
